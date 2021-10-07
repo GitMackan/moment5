@@ -1,6 +1,6 @@
 <?php
 
-$devMode = true;
+$devMode = false;
 
 if($devMode) {
     error_reporting(-1);
@@ -11,7 +11,7 @@ spl_autoload_register(function ($class_name) {
     include 'classes/' . $class_name . '.class.php';
 });
 
-
+    // Anslutsinställningar vid utveckling
 if($devMode) {
     define("DBHOST", "localhost");
     define("DBUSER", "moment5");

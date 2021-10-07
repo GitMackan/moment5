@@ -73,7 +73,7 @@ switch($method) {
                 http_response_code(200);
                 $response = array("message" => "Post with id=$id is updated");
             } else {
-                $respone = array("message" => "Something went wrong");
+                $response = array("message" => "Something went wrong");
                 }    
             }
         break;
@@ -86,7 +86,7 @@ switch($method) {
                 http_response_code(200);
                 $response = array("message" => "Post with id=$id is deleted");
             } else {
-                $respone = array("message" => "Something went wrong..");
+                $response = array("message" => "Something went wrong..");
             }
         }
         break;

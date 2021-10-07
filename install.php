@@ -2,7 +2,7 @@
 
 include('includes/config.php');
 
-// Anslut till databas
+// Anslutning till databas
 $db = new mysqli(DBHOST, DBUSER, DBPASS, DBDATABASE);
 if($db->connect_errno > 0) {
     die("Fel vid anslutning: " . $db->connect_error);
@@ -19,12 +19,9 @@ CREATE TABLE courses(
     postdate timestamp NOT NULL DEFAULT current_timestamp()
 );";
 
-$sql .= "
-    INSERT INTO courses(code,name,prog,syllabus) VALUES ('testkurs', 'testnamn', 'A', 'link');
-";
-
 echo "<pre>$sql</pre>";
 
+// Kontroll på installation
 if ($db->multi_query($sql)) {
     echo "<p>Korrekt uppladdning!</p>";
 } else {

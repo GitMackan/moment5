@@ -1,6 +1,7 @@
 <?php
 
 class Course {
+    // Variabler
     private $db;
     private $code;
     private $name;
