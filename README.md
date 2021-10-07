@@ -11,3 +11,7 @@ En klass har sedan gjorts i PHP för att hantera datan som kommer att hanteras i
 
 ### API
 Slutligen har själva API-sidan skapats som kommer att kommunicera med webbsidan som ska konsumera denna webbtjänst. Denna struktur bygger på olika switch cases, beroende på vad som skickas till webbtjänsten, om det är GET, POST, PUT eller DELETE, där varje case har en lösning på att antingen hämta, lägga till, uppdatera eller ta bort data. Dessa lösningar använder sig av funktioner skapade i klassen som gjorts. 
+
+
+### Länk till webbtjänst
+https://studenter.miun.se/~many2005/dt173g/moment5/api.php
